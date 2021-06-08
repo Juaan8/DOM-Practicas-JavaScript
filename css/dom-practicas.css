@@ -69,6 +69,7 @@ img{
 	width: 100%;
 	background-color: var(--second-modal-color);
 	opacity: 0;
+	visibility: hidden;
 	transition: transform .3s ease, opacity .5s ease;
 	/*DE ARRIBA*/
 	/*transform: translate(0,-100%);*/
@@ -83,6 +84,7 @@ img{
 .panel.is-active{
 	/*transform: translate(0,0);*/
 	opacity: 1;
+	visibility: visible;
 }
 
 
