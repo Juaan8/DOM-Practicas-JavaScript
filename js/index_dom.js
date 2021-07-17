@@ -19,7 +19,6 @@ countdown("countdown","Jan 8,2023 05:00:00","Feliz cumpleaños");
 
 scrollTopButton(".scroll-top-btn");
 
-darkTheme(".dark-theme-btn","dark-mode");
 
 });
 
@@ -27,3 +26,5 @@ d.addEventListener("keydown", (e) => {
 	shortcuts(e);
 	moveBall(e,".ball",".stage");
 });
+
+darkTheme(".dark-theme-btn","dark-mode");
