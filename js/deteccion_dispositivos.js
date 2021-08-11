@@ -53,6 +53,7 @@ export default function userDeviceInfo(id){
 	`;
 
 	/*Conenido exclusivo*/
+
 	if (isBrowser.chrome()) {
 		$id.innerHTML += `<p><mark>Este contenido solo se ve en Chrome</mark></p>`;
 	}
@@ -72,4 +73,11 @@ export default function userDeviceInfo(id){
 	if (isDesktop.windows()) {
 		$id.innerHTML += `<p><mark>Descarga nuestro software para Windows</mark></p>`;
 	}
+
+	/*Redirecciones*/
+
+	if (isMobile.android()) {
+		window.location.href = "https://www.youtube.com";
+	}
+
 }
