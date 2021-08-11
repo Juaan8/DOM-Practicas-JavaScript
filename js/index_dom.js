@@ -6,6 +6,7 @@ import scrollTopButton from "../js/boton_scroll.js";
 import darkTheme from "../js/tema_oscuro.js";
 import responsiveMedia from "../js/objeto_responsive.js";
 import responsiveTester from "../js/prueba_responsive.js";
+import userDeviceInfo from "../js/deteccion_dispositivos.js";
 
 const d = document;
 
@@ -44,6 +45,8 @@ responsiveMedia(
 	);
 	
 	responsiveTester("responsive-tester");
+
+	userDeviceInfo("user-device");
 });
 
 d.addEventListener("keydown", (e) => {
