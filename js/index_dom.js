@@ -14,6 +14,7 @@ import searchFilters from "../js/filtro_busquedas.js";
 import draw from "../js/sorteo.js";
 import slider from "../js/carrusel.js";
 import scrollSpy from "../js/scroll_espia.js";
+import smartVideo from "../js/video_inteligente.js";
 
 const d = document;
 
@@ -66,6 +67,8 @@ responsiveMedia(
 	slider();
 
 	scrollSpy();
+
+	smartVideo();
 });
 
 d.addEventListener("keydown", (e) => {
