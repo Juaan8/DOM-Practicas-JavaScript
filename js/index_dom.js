@@ -13,6 +13,7 @@ import getGeolocation from "../js/geolocalizacion.js";
 import searchFilters from "../js/filtro_busquedas.js";
 import draw from "../js/sorteo.js";
 import slider from "../js/carrusel.js";
+import scrollSpy from "../js/scroll_espia.js";
 
 const d = document;
 
@@ -63,6 +64,8 @@ responsiveMedia(
 	draw("#winner-btn",".player");
 
 	slider();
+
+	scrollSpy();
 });
 
 d.addEventListener("keydown", (e) => {
