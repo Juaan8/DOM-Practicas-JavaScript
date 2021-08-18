@@ -12,6 +12,7 @@ import webCam from "../js/deteccion_webcam.js";
 import getGeolocation from "../js/geolocalizacion.js";
 import searchFilters from "../js/filtro_busquedas.js";
 import draw from "../js/sorteo.js";
+import slider from "../js/carrusel.js";
 
 const d = document;
 
@@ -60,6 +61,8 @@ responsiveMedia(
 	searchFilters(".card-filter",".card");
 
 	draw("#winner-btn",".player");
+
+	slider();
 });
 
 d.addEventListener("keydown", (e) => {
