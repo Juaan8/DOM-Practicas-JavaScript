@@ -15,6 +15,7 @@ import draw from "../js/sorteo.js";
 import slider from "../js/carrusel.js";
 import scrollSpy from "../js/scroll_espia.js";
 import smartVideo from "../js/video_inteligente.js";
+import contactFormValidations from "../js/validaciones_formulario.js";
 
 const d = document;
 
@@ -69,6 +70,8 @@ responsiveMedia(
 	scrollSpy();
 
 	smartVideo();
+
+	contactFormValidations();
 });
 
 d.addEventListener("keydown", (e) => {
